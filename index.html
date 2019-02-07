@@ -1,0 +1,105 @@
+<!--Yandex Translate Api Python Flask
+Erdem Demirtaş
+demirtaserdem@gmail.com
+https://github.com/demirtaserdem/yandex-translate-api-python-flask
+https://app1.erdemdemirtas.net
+-->
+
+<!-- Bootstrap v4.2.1
+ve Jinja Template Kullanularak Hazırlanmıştır. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yandex Translate Api Javascript </title>
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <!-- icon dosyası eklenmiştir -->
+    <link rel="icon" href="./static/icon/icon1.ico">
+</head>
+<body>
+    <!-- İçerik Container içerisine konulmuştur -->
+    <div class = "container" id = "container-1" >
+        <!-- Izgaralara Ayırmak için row kolonu kullanulmıştır -->
+        <div class="row" id = "row-1">
+            <!-- Kolon Seçilmiştir -->
+            <div class = "col-md-6 mx-auto" id ="colon-1">
+                <!-- Card oluşturulmuştur -->
+                <div class ="card card-body mt-5" id = "card-1">
+                    <!-- Başlık -->
+                    <h3 class="heading display-5  pb-3" id = "title-1">Yandex Translate Api Python Javascript</h3>
+                    <!-- Form Alanı -->
+                    <form action="" method="post" id = "form-1">
+                        <div class="form-group" id = "fg-1">
+                            <label class ="form-label" id = "fl-1">Türkçe Kelimeyi Giriniz: </label>
+                            <!-- Kelime Giriş Alanı -->
+                            <input type="text" class="form-control" name = "input_word" id = "input_word" autocomplete="off" placeholder="" autofocus required>
+                        </div>
+                        <hr>
+                        <!-- Sonuç Bölümü Jinja Kullanılmıştır -->
+                        <div class="form-group" id = "fg-2">
+                            <p>İngilizce Çeviri:</p>
+                                <input type="text" readonly class="form-control" name = "output_word" id ="output_word" value="" autocomplete="off">
+                        </div>
+                        <!-- Çevir Butonu Bölümü -->
+                        <div class="form-group" id = "fg-3">
+                            <input id ="submitbtn" type="submit" value = "Çevir" class = "btn btn-danger">
+                        </div>
+                    </form>
+                    <!-- Son Arananlar Bölümü Jinja kullanılmıştır  -->
+                    <div class="form-group" id = "fg-4">
+                        <p>Son Arananlar: </p>
+                        <textarea class = "form-control" rows ="5" id = "lastSearchListArea" readonly></textarea>
+                    </div>
+                    <!-- Son Arananları Temizle butonu -->
+                    <div class="form-group" id = "fg-5">
+                        <button class ="btn btn-danger" id = "btn_clear">Son Arananları Temizle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer Tüm Sayfayı kaplaması için container sışına yerleştirilmiştir  -->
+<hr>
+<footer class="text-center small">
+        <p><a href="http://www.erdemdemirtas.com.tr" target="_blank">@demirtaserdem</a> - 
+        <a href="https://github.com/demirtaserdem/yandex-translate-api-flask" target="_blank">Project Page Github</a></p>
+    </footer>
+    <hr>
+    
+    <script type="text/javascript" src="./static/js/bs4/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="./static/js/bs4/popper.min.js"></script>
+    <script type="text/javascript" src="./static/js/bs4/bootstrap.min.js"></script>
+    <script src="./static/js/bundles/bundle.js"></script>
+
+<!-- geliştirme yapılan ortamlar
+aşağıdaki düzenlemeler yapıldıktan sonra bundle.js
+yerine yayına alınabilir -->
+<!-- 
+    app.js
+    -import {Storage} from "./storage"
+    -import {Ui} from "./ui"
+    -import {Yta} from "./yta"
+
+    yta.js
+    + class Yta{
+    - export class Yta{
+
+    ui.js
+    + class Ui{
+    - export class Ui{
+
+    storage.js
+    + class Storage{
+    - export class Storage{
+<script  src="./static/js/src/yta.js"></script>
+<script  src="./static/js/src/ui.js"></script>
+<script  src="./static/js/src/storage.js"></script>
+<script  src="./static/js/src/app.js"></script>
+ -->
+
+</body>
+</html>
