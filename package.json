@@ -1,0 +1,16 @@
+{
+  "name": "app3.erdemdemirtas.net",
+  "version": "1.0.0",
+  "description": "Yandex Translate Api",
+  "main": "./static/src/app.js",
+  "scripts": {
+    "build": "webpack --progress"
+  },
+  "keywords": [],
+  "author": "demirtaserdem@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.22.0",
+    "webpack-cli": "^3.1.2"
+  }
+}
