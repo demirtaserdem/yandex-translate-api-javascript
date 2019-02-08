@@ -1,9 +1,10 @@
 export class Yta{
+    // Url uluşturup Yandex Tranlate Apiye istek yollar
+    // sonucu response objesiyle birlikte dener
     constructor(){
         this.baseUrl = "https://translate.yandex.net/api/v1.5/tr.json/translate"
         this.apiKey = "trnsl.1.1.20190121T100542Z.4befbb4bba198843.b6081dd6370342a5c61258dbb83fb7b9a58dd523"
         this.lang = "tr-en"
-
     }
     async translateWord(inputWord){
         this.inputWord = inputWord
@@ -13,6 +14,3 @@ export class Yta{
         return dataTranslate.text[0]
     }
 }
-
-
-
