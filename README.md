@@ -1,4 +1,4 @@
-# Yandex Translate API - Jvascript 
+# Yandex Translate API - Javascript 
 
 Yandex Translate Api kullanılarak,  
 Türkçe - İngilizce çeviri yapan bir Javascript uygulamasıdır. 
@@ -6,13 +6,13 @@ Türkçe - İngilizce çeviri yapan bir Javascript uygulamasıdır.
 
 - Html sayfasını oluşturulurken Bootstrap v4.2.1 kullandım.
 
-- js dosyalarını birleştirirken webpack kullandum.
+- js dosyalarını birleştirirken webpack kullandım.
 
 ### Yöntem
 Temel olarak Kullanıcının istediği kelimeyle, Yandex Translate Api'ye
-uygun url oluşturulmuş. Çevirisi async await yapısıyla   
+uygun url oluşturulmuş. async await fetch yapısıyla   
 Yandex Translate Api'ye get request gönderilmiştir.
-Dönen bilgi json verisi verisi olarak işlenmiş DOM Manüplasyonu ile 
+Dönen bilgi json verisi olarak işlenmiş DOM Manüplasyonu ile 
 html saydasına aktarılmıştır.
 
 Veri Depolama için tarayıcının Local Storage alanı Kullanılmıştır.
@@ -28,7 +28,7 @@ Veri Depolama için tarayıcının Local Storage alanı Kullanılmıştır.
 
 ### Çalışma Ağacı - Kısa Açıklamalarla
 
-```bash
+```
 .
 ├── option with babel settings      -->> webpack babel ile kullanılmak
 │   ├── package.json                    > istenirse gereken ayar dosyaları
@@ -54,8 +54,6 @@ Veri Depolama için tarayıcının Local Storage alanı Kullanılmıştır.
 ├── index.html      -->> anasayfa
 ├── package.json       -->> npm ayar dosyası
 └── webpack.config.js   -->> webpack ayar dosyası
-
-
 
 ```
 
