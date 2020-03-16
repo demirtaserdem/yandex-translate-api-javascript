@@ -61,9 +61,55 @@ Veri Depolama için tarayıcının Local Storage alanı Kullanılmıştır.
 Uygulama bu haliyle çalışır durumdadır. Aşağıdaki komutla kopyalanıp
 index.html'le çalıştırılabilir.
 
+Kopyalamak için:
+
 ```
 git clone https://github.com/demirtaserdem/yandex-translate-api-javascript.git 
 ```
+
+Nginx ayarları:
+```
+/etc/nginx/sites-available$ sudo vim app3.demirtas.biz
+```
+
+İçerisine
+
+```
+server {
+       listen 80;
+       listen [::]:80;
+
+       server_name app3.demirtas.biz;
+
+       root /{index.html address};
+       index index.html;
+
+       location / {
+               try_files $uri $uri/ =404;
+       }
+}
+```
+
+Sites enabled
+
+```
+sudo ln -s /etc/nginx/sites-available/app3.demirtas.biz /etc/nginx/sites-enabled/app3.demirtas.biz
+```
+
+Restart Nginx
+
+``` 
+sudo systemctl restart nginx
+```
+
+Certbot
+
+```
+sudo certbot --nginx -d app3.demirtas.biz
+```
+
+
+
 
 ## Geliştirme - Değiştirme
 Geliştirme kısmında 4 dosya kullanılmıştır. webpack ile bundle.js de birleştirilmiştir.
