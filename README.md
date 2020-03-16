@@ -93,10 +93,10 @@ Komutları çalıştırılabilir.
 
 ### Çalışan uygulama
 Aşağıdaki adrestedir
-https://app3.erdemdemirtas.net 
+https://app3.demirtas.biz 
 
 ### Yayın  ortamı
-Amazon Ec2 - Route52 - Ubuntu 18.04 - nginx - letsencrypt kullanılarak hazırlanmıştır.
+Hetzner Cloud Compute - Hetzner Robot - Ubuntu 18.04 - nginx - letsencrypt kullanılarak hazırlanmıştır.
 
 ## Kaynak
 [1] : https://tech.yandex.com/translate/
